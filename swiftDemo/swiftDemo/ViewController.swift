@@ -20,7 +20,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         
         self.navigationItem.title = "hello world"
-        whileUse()
         
         dataArrayInit()
         tableViewInit()
@@ -29,15 +28,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-
-    func whileUse() -> Void {
-        // 5.2 while
-        var index = 1
-        while index <= 3 {
-            print("\(index)")
-            index += 1
-        }
     }
     
     func tableViewInit() {
@@ -71,14 +61,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }else if indexPath.row == 2 {
             vc = TextInputViewController()
         }else if indexPath.row == 3 {
+            vc = ImageViewController()
+        }else if indexPath.row == 4 {
             
+        }else if indexPath.row == 5 {
+            vc = DynamicAnimatorViewController()
         }
+        
+        vc.view.backgroundColor = UIColor.whiteColor()
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    /**
+     *   数据源
+     */
     func dataArrayInit() {
         if self.dataArray == nil {
-            self.dataArray = NSArray(array: ["button", "label", "textInput", "collectionview"])
+            self.dataArray = NSArray(array: ["button", "label", "textInput", "imageview", "collectionview" , "UIDynamicAnimator"])
         }
     }
 
