@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		C20C76E01D15566600AA557F /* DynamicAnimatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20C76DE1D15566600AA557F /* DynamicAnimatorViewController.swift */; };
 		C20C76E11D15566600AA557F /* DynamicAnimatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20C76DF1D15566600AA557F /* DynamicAnimatorViewController.xib */; };
+		C259D9E11D18D9C400EE8C80 /* note.md in Sources */ = {isa = PBXBuildFile; fileRef = C259D9E01D18D9C400EE8C80 /* note.md */; };
+		C259D9E31D18E24800EE8C80 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C259D9E21D18E24800EE8C80 /* CollectionViewController.swift */; };
 		C2B22C911D14F1DF00EF46E7 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B22C901D14F1DF00EF46E7 /* ButtonViewController.swift */; };
 		C2B22C931D14F37300EF46E7 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B22C921D14F37300EF46E7 /* LabelViewController.swift */; };
 		C2B22C951D14F3B500EF46E7 /* TextInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B22C941D14F3B500EF46E7 /* TextInputViewController.swift */; };
+		C2B8A0031D1BFD9100DE9455 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B8A0021D1BFD9100DE9455 /* AnimationViewController.swift */; };
 		C2DA21381D152BAB0018E859 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DA21371D152BAB0018E859 /* ImageViewController.swift */; };
 		C2F599D81CEB053F008E1D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F599D71CEB053F008E1D91 /* AppDelegate.swift */; };
 		C2F599DA1CEB053F008E1D91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F599D91CEB053F008E1D91 /* ViewController.swift */; };
@@ -42,9 +45,12 @@
 /* Begin PBXFileReference section */
 		C20C76DE1D15566600AA557F /* DynamicAnimatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicAnimatorViewController.swift; sourceTree = "<group>"; };
 		C20C76DF1D15566600AA557F /* DynamicAnimatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicAnimatorViewController.xib; sourceTree = "<group>"; };
+		C259D9E01D18D9C400EE8C80 /* note.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = note.md; sourceTree = "<group>"; };
+		C259D9E21D18E24800EE8C80 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		C2B22C901D14F1DF00EF46E7 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		C2B22C921D14F37300EF46E7 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		C2B22C941D14F3B500EF46E7 /* TextInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputViewController.swift; sourceTree = "<group>"; };
+		C2B8A0021D1BFD9100DE9455 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		C2DA21371D152BAB0018E859 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		C2F599D41CEB053E008E1D91 /* swiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F599D71CEB053F008E1D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -115,12 +121,15 @@
 				C2B22C921D14F37300EF46E7 /* LabelViewController.swift */,
 				C2B22C941D14F3B500EF46E7 /* TextInputViewController.swift */,
 				C2DA21371D152BAB0018E859 /* ImageViewController.swift */,
+				C2B8A0021D1BFD9100DE9455 /* AnimationViewController.swift */,
+				C259D9E21D18E24800EE8C80 /* CollectionViewController.swift */,
 				C20C76DE1D15566600AA557F /* DynamicAnimatorViewController.swift */,
 				C20C76DF1D15566600AA557F /* DynamicAnimatorViewController.xib */,
 				C2F599DB1CEB053F008E1D91 /* Main.storyboard */,
 				C2F599DE1CEB053F008E1D91 /* Assets.xcassets */,
 				C2F599E01CEB053F008E1D91 /* LaunchScreen.storyboard */,
 				C2F599E31CEB053F008E1D91 /* Info.plist */,
+				C259D9E01D18D9C400EE8C80 /* note.md */,
 			);
 			path = swiftDemo;
 			sourceTree = "<group>";
@@ -275,11 +284,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C259D9E31D18E24800EE8C80 /* CollectionViewController.swift in Sources */,
 				C2F599DA1CEB053F008E1D91 /* ViewController.swift in Sources */,
 				C2B22C911D14F1DF00EF46E7 /* ButtonViewController.swift in Sources */,
 				C20C76E01D15566600AA557F /* DynamicAnimatorViewController.swift in Sources */,
 				C2F599D81CEB053F008E1D91 /* AppDelegate.swift in Sources */,
+				C259D9E11D18D9C400EE8C80 /* note.md in Sources */,
 				C2B22C931D14F37300EF46E7 /* LabelViewController.swift in Sources */,
+				C2B8A0031D1BFD9100DE9455 /* AnimationViewController.swift in Sources */,
 				C2DA21381D152BAB0018E859 /* ImageViewController.swift in Sources */,
 				C2B22C951D14F3B500EF46E7 /* TextInputViewController.swift in Sources */,
 			);

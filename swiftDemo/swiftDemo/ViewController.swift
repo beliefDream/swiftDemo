@@ -63,8 +63,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }else if indexPath.row == 3 {
             vc = ImageViewController()
         }else if indexPath.row == 4 {
-            
+            vc = CollectionViewController()
         }else if indexPath.row == 5 {
+            vc = AnimationViewController()
+        }else if indexPath.row == 6 {
             vc = DynamicAnimatorViewController()
         }
         
@@ -77,7 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
      */
     func dataArrayInit() {
         if self.dataArray == nil {
-            self.dataArray = NSArray(array: ["button", "label", "textInput", "imageview", "collectionview" , "UIDynamicAnimator"])
+            self.dataArray = NSArray(array: ["button", "label", "textInput", "imageview", "collectionview" , "AnimationViewController", "UIDynamicAnimator"])
         }
     }
 
